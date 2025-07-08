@@ -9,6 +9,7 @@ const totalLikes = (blogs) => {
 }
 
 const favoriteBlogs = (blogs) => {
+  if (blogs.length === 0) return 0;
   blogs.sort((x, y) => y.likes - x.likes)
   return blogs[0]
 }
