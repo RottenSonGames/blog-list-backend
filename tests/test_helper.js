@@ -1,4 +1,8 @@
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+
 const Blog = require('../models/blog')
+const User = require('../models/user')
 
 const initialBlogs = [
   {
@@ -51,6 +55,46 @@ const initialBlogs = [
   }  
 ]
 
+const initialUsers = [
+  {
+    _id: "7a6969a71f546f76434e27f7",
+    username: "Bianglord",
+    name: "Sarfraz Suhaimi",
+    password: "ImmaFuckingBianglord!",
+    __v: 0
+  },
+    {
+    _id: "8a6446d71f546f73234e27d6",
+    username: "Biangbrain",
+    name: "Siddarth Prabhakar",
+    password: "ImmaFuckingBiangbrain!",
+    __v: 0
+  },
+]
+
+const hashTestUserPassword = async (password) => {
+  const passwordHash = await bcrypt.hash(password, 10)
+  return passwordHash
+}
+
+const createTestUser = async () => {
+  const passwordHash = await bcrypt.hash('superPassword', 10)
+  const user = {
+    username: 'testUser',
+    name: "Test User",
+    passwordHash,
+    __v: 0
+  }
+  const testUser = await new User(user).save()
+  return testUser
+}
+
+const generateTestToken = async ({ username, id }) => {
+  const userForToken = { username, id }
+  const testToken = jwt.sign(userForToken, process.env.SECRET)
+  return testToken
+}
+
 const nonExistingId = async () => {
   const blog = new Blog({ content: 'willremovesoon' })
   await blog.save()
@@ -61,9 +105,14 @@ const nonExistingId = async () => {
 
 const blogsInDb = async () => {
   const blogs = await Blog.find({})
-  return blogs.map(blog=> blog.toJSON())
+  return blogs.map(blog => blog.toJSON())
+}
+
+const usersInDb = async () => {
+  const users = await User.find({})
+  return users.map(user => user.toJSON())
 }
 
 module.exports = {
-  initialBlogs, nonExistingId, blogsInDb
+  initialBlogs, initialUsers, hashTestUserPassword, createTestUser, generateTestToken, nonExistingId, blogsInDb, usersInDb
 }

@@ -1,0 +1,18 @@
+### Delete blog: React patterns
+DELETE http://localhost:3003/api/blogs/6881d9949482c5987d65e9f5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJpYW5ndGFyZCIsImlkIjoiNjg4MWQ3YjI0ODVlMDc0NjY5YTFhM2JhIiwiaWF0IjoxNzUzNDI4MjA4fQ.8pLqr3yvkPZvRzyRF45_PAdqGLe_wrcbgQ4KOrAZSms
+
+### Delete blog: Go To Statement Considered Harmful
+DELETE http://localhost:3003/api/blogs/6881d7c0485e074669a1a3c2
+
+### Delete blog: Canonical string reduction
+DELETE http://localhost:3003/api/blogs/6881d7c1485e074669a1a3c5
+
+### Delete blog: First class tests
+DELETE http://localhost:3003/api/blogs/6881d7c3485e074669a1a3c8
+
+### Delete blog: TDD harms architecture
+DELETE http://localhost:3003/api/blogs/6881d7c4485e074669a1a3cb
+
+### Delete blog: Type wars
+DELETE http://localhost:3003/api/blogs/6881d7c6485e074669a1a3ce

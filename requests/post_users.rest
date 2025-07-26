@@ -1,0 +1,19 @@
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "Biangtard",
+  "name": "Benjamin Tan",
+  "password": "ImaFuckingBiangtard1!"
+}
+
+###
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "Biangking",
+  "name": "Nicholas Liau",
+  "password": "ImaFuckingBiangking1!"
+}

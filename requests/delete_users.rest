@@ -1,0 +1,8 @@
+###Delete Bianglord
+DELETE http://localhost:3003/api/users/6881d10bf5c15c7e872591cf
+Content-Type: application/json
+
+###Delete Biangking
+
+DELETE http://localhost:3003/api/users/6881d10df5c15c7e872591d1
+Content-Type: application/json

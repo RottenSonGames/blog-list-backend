@@ -2,8 +2,94 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-    "title": "Northern Wildflowers",
-    "author": "Jenny Fortier",
-    "url": "https://northernwildflowers.ca/",
-    "likes": 30
+  "title": "React patterns",
+  "author": "Michael Chan",
+  "url": "https://reactpatterns.com/",
+  "likes": 7
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Go To Statement Considered Harmful",
+  "author": "Edsger W. Dijkstra",
+  "url": "http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html",
+  "likes": 5
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Canonical string reduction",
+  "author": "Edsger W. Dijkstra",
+  "url": "http://www.cs.utexas.edu/~EWD/transcriptions/EWD08xx/EWD808.html",
+  "likes": 12
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "First class tests",
+  "author": "Robert C. Martin",
+  "url": "http://blog.cleancoder.com/uncle-bob/2017/05/05/TestDefinitions.htmll",
+  "likes": 10
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "TDD harms architecture",
+  "author": "Robert C. Martin",
+  "url": "http://blog.cleancoder.com/uncle-bob/2017/03/03/TDD-Harms-Architecture.html",
+  "likes": 0
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJpYW5ndGFyZCIsImlkIjoiNjg4MWQ3YjI0ODVlMDc0NjY5YTFhM2JhIiwiaWF0IjoxNzUzMzU1MzY5fQ.sNT3L1umsjZN7lnMrRou2A9yt_f_ViCeMwI1UBb0jLk
+
+{
+  "title": "Type wars",
+  "author": "Robert C. Martin",
+  "url": "http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html",
+  "likes": 2
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJpYW5ndGFyZCIsImlkIjoiNjg4MWQ3YjI0ODVlMDc0NjY5YTFhM2JhIiwiaWF0IjoxNzUzMzU1MzY5fQ.sNT3L1umsjZN7lnMrRou2A9yt_f_ViCeMwI1UBb0jLk
+
+{
+  "title": "How to biang a life",
+  "author": "You Song Bong",
+  "url": "http://blog.bongtothesong/howtobiangalife.html",
+  "likes": 69420
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "How to NOT biang a life",
+  "author": "You Song Bong",
+  "url": "http://blog.bongtothesong/howtoNOTbiangalife.html",
+  "likes": 69420
 }

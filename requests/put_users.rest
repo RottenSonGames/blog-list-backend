@@ -1,0 +1,6 @@
+###Update Biangtard
+PUT http://localhost:3003/api/users/6881d7b2485e074669a1a3ba
+
+
+###Update Biangking
+PUT http://localhost:3003/api/users
